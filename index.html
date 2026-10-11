@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>To Do List</title>
+    <link rel="stylesheet" href="./style.css" />
+    <script src="./main.js" defer></script>
+  </head>
+  <body>
+    <main class="container">
+      <header class="header">
+        <h1>To Do List</h1>
+        <div class="head">
+          <div class="profile">
+            <div class="profile-info">
+              <p><strong>Nama:</strong> Tommy</p>
+              <p><strong>Jabatan:</strong> Full Stack Web Developer</p>
+            </div>
+          </div>
+          <div class="time">
+            <p id="day"></p>
+            <p id="date"></p>
+          </div>
+        </div>
+      </header>
+
+      <section class="task-form">
+        <h2>Tambah Task</h2>
+        <form id="taskForm">
+          <label for="taskInput"> Tulis Task </label>
+          <textarea id="taskInput" placeholder=
+          "Ketik tugas yang ingin di kerjakan."
+            required></textarea>
+
+          <div class="select">
+            <label for="priority">Level Prioritas</label>
+            <select id="priority">
+              <option value="Low">Low</option>
+              <option value="Medium">Medium</option>
+              <option value="High">High</option>
+            </select>
+            <button type="submit">Submit</button>
+          </div>
+        </form>
+      </section>
+
+      <section class="todo-section">
+        <div class="section-header">
+          <h2>TO DO</h2>
+          <button id="deleteAll">Delete All</button>
+        </div>
+        <div id="todoList"></div>
+      </section>
+
+      <section class="done-section">
+        <h2>DONE</h2>
+
+        <div id="doneList"></div>
+      </section>
+    </main>
+  </body>
+</html>
